@@ -1,0 +1,44 @@
+{
+  "name": "MobileClick",
+  "namespace" : "com.streaming.poc.events",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "targetId",
+      "type": "int"
+    },
+    {
+      "name": "targetName",
+      "type": "string"
+    },
+    {
+      "name": "isLoggedInClick",
+      "type": "boolean"
+    },
+    {
+      "name": "userData",
+      "type": {
+        "name": "User",
+        "type": "record",
+        "fields": [
+          {
+            "name": "id",
+            "type": "long"
+          },
+          {
+            "name": "firstName",
+            "type": "string"
+          },
+          {
+            "name": "lastName",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
