@@ -6,7 +6,7 @@
 
     <groupId>com.streaming.poc.events</groupId>
     <artifactId>streaming-poc-events</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -51,6 +51,9 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <imports>
+                        <import>${project.basedir}/src/main/resources/avro/common/CommonFields.avsc</import>
+                    </imports>
                     <sourceDirectory>${project.basedir}/src/main/resources/avro/</sourceDirectory>
                     <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                     <fieldVisibility>PRIVATE</fieldVisibility>

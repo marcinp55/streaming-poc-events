@@ -4,6 +4,10 @@
   "type": "record",
   "fields": [
     {
+      "name": "commonFields",
+      "type": "CommonFields"
+    },
+    {
       "name": "id",
       "type": "long"
     },

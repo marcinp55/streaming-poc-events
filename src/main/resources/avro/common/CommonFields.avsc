@@ -1,0 +1,15 @@
+{
+  "name": "CommonFields",
+  "namespace": "com.streaming.poc.events",
+  "type": "record",
+  "fields": [
+    {
+      "name": "event_name",
+      "type": "string"
+    },
+    {
+      "name": "version",
+      "type": "int"
+    }
+  ]
+}
